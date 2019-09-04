@@ -1,0 +1,37 @@
+.left {
+float : right
+}
+
+.buttons { 
+    background-color: darkslategray;
+    border-radius : 0px;
+    font-size: 30px;
+    font-style: oblique;
+    color: whitesmoke    
+}
+
+.month {
+    background-color: darkslategray;
+    color : whitesmoke;
+    font-size: 30px
+}
+
+.today {
+    background-color : rgba(0, 162, 255, 0.795);
+    text-align: center
+}
+
+.holiday {
+    background-color: darkred;
+    text-align: center
+
+}
+
+.top {
+    background-color: darkslategray;
+}
+
+.anyday {
+    text-align: center;
+    font-size : 20px
+}

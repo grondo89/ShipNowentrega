@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calendar</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container col-sm-4 col-md-7 col-lg-6">
+      <!-- creo un div con la clase card de bootstrap -->
+      <div class="card">
+        <div class="top">
+          <button class="btn buttons" id="previous" onclick="prevMonth()">
+            &lt
+          </button>
+
+          <button class="btn left buttons" id="next" onclick="nextMonth()">
+            &gt
+          </button>
+        </div>
+
+        <div class="card-header month" id="header" style="text-align : center"></div>
+
+        <!-- seteo una tabla usando las clases de bootstrap para los estilos -->
+        <table class="table table-bordered" id="calendar">
+          <thead>
+            <!-- con una fila en el head marcando los dias de la semana -->
+            <tr>
+              <th>Dom</th>
+              <th>Lun</th>
+              <th>Mar</th>
+              <th>Mier</th>
+              <th>Jue</th>
+              <th>Vie</th>
+              <th>Sab</th>
+            </tr>
+          </thead>
+          <!-- seteo un body en el cual van a agregarse las filas de celdas a traves de la logica definida en scripts.js-->
+          <tbody id="calendar-body"></tbody>
+        </table>
+        <!-- botones con los metodos para avanzar y retroceder de mes -->
+
+
+      </div>
+    </div>
+    <!-- importe Jquery localmente porque al hacerlo por CDN no reconocia el comando $.ajax . Al hacerlo localmente se soluciono el problema y no llegue a troubleshootearlo como corresponde -->
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
